@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         back_btn.triggered.connect(self.browser.back)
         navbar.addAction(back_btn)
         #forward
-        forward_btn = QAction('->', self)
+        forward_btn = QAction('Forward', self)
         forward_btn.triggered.connect(self.browser.forward)
         navbar.addAction(forward_btn)
         #refresh
@@ -47,6 +47,10 @@ class MainWindow(QMainWindow):
     def navigate_to_url(self):
         url = self.url_bar.text()
         self.browser.setUrl(QUrl(url))
+
+    def update_url(self, q):
+        self.url_bar.setText(q.toString())
+
 
 
 
