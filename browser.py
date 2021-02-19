@@ -30,7 +30,8 @@ class MainWindow(QMainWindow):
         navbar.addAction(refresh_btn)
         #Home
         home_btn = QAction('Home', self)
-        home_btn.triggered.connect()
+        home_btn.triggered.connect(self.navigate_home)
+        navbar.addAction(home_btn)
 
 
 
