@@ -16,9 +16,21 @@ class MainWindow(QMainWindow):
         #Navbar
         navbar = QToolBar()
         self.addToolBar(navbar)
-        back_btn = QAction('Back', self)
+        #back button
+        back_btn = QAction('<-', self)
         back_btn.triggered.connect(self.browser.back)
         navbar.addAction(back_btn)
+        #forward
+        forward_btn = QAction('->', self)
+        forward_btn.triggered.connect(self.browser.forward)
+        navbar.addAction(forward_btn)
+        #refresh
+        refresh_btn = QAction('Reload', self)
+        refresh_btn.triggered.connect(self.browser.reload)
+        navbar.addAction(refresh_btn)
+        #Home
+        home_btn = QAction('Home', self)
+        home_btn.triggered.connect()
 
 
 
