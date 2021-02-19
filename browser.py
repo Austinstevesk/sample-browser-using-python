@@ -32,10 +32,13 @@ class MainWindow(QMainWindow):
         home_btn = QAction('Home', self)
         home_btn.triggered.connect(self.navigate_home)
         navbar.addAction(home_btn)
+        #Url Bar
+        self.url_bar = QLineEdit()
+        navbar.addWidget(self.url_bar)
 
     def navigate_home(self):
         self.browser.setUrl(QUrl('https://google.com'))
-        
+
 
 
 
