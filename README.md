@@ -8,7 +8,7 @@ Install pip3
 #Clone the repository:
 git clone https://github.com/Austinstevesk/sample-browser-using-python.git
 
-#Navigate to sample-browser using-python and install requirements:
+#Navigate to sample-browser using-python/browser and install requirements:
 pip3 install -r requirements.txt
 
 #Run the file:
