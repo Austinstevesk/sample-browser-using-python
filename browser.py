@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         navbar = QToolBar()
         self.addToolBar(navbar)
         #back button
-        back_btn = QAction('<-', self)
+        back_btn = QAction('Back', self)
         back_btn.triggered.connect(self.browser.back)
         navbar.addAction(back_btn)
         #forward
